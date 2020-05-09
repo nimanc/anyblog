@@ -11,6 +11,7 @@ urlpatterns = [
     path('search/', search, name='search'),
     path('post/<id>/', post, name='post-detail'),
     path('tinymce/', include('tinymce.urls')),
+    path('summernote/', include('django_summernote.urls')),
 ]
 
 if settings.DEBUG:
